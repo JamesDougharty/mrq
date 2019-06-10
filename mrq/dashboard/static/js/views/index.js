@@ -62,6 +62,7 @@ define(["jquery", "underscore", "views/generic/page", "models", "moment", "circl
     },
 
     renderCircleStats: function (scope, selector, text, percent, info, animation) {
+      var self = this;
       self.$(scope).append(this.buildCircle(selector, text, percent, info, animation));
       self.$("#" + selector).circliful();
     },
